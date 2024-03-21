@@ -45,9 +45,12 @@ function App() {
                         <InputBox
                             label="From"
                             amount={amount}
-                            currencyOptions={opton}
+                            currencyOptions={option}
                             onCurrencyChange={(currency) => setAmount(amount)}
                             selectcurreny={from}
+                            onAmountChange={(amount) => {
+                                setAmount(amount);
+                            }}
                         />
                     </div>
                     <div className="relative w-full h-0.5">
